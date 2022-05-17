@@ -176,6 +176,7 @@
                                                 <td>₱ '.$row['amount'].'</td>
                                                 <td><span class="order-status">'.$row['order_status'].'</span></td>
                                                 <td>
+                                                    <button class="btn btn-sm ordered-items" data-target="view-items-modal" value="'.$row['id'].'"><i class="bx bx-purchase-tag-alt"></i></button>
                                                     <button class="btn btn-sm ordered-delete" data-target="delete-order-dialog" value="'.$row['id'].'"><i class="bx bx-trash-alt"></i></button>
                                                     <button class="btn btn-sm ordered-update" data-target="update-order-modal" value="'.$row['id'].'"><i class="bx bx-sync bx-rotate-180" ></i></button>';
                                         $order_id = $row['id'];
