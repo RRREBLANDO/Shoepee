@@ -5,7 +5,7 @@
     $product_id = mysqli_real_escape_string($conn, $_POST['product_id']);
     $quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
     $size = mysqli_real_escape_string($conn, $_POST['size']);
-    $sql = "SELECT * FROM cart WHERE product_id='{$product_id}'";
+    $sql = "SELECT * FROM cart WHERE product_id='{$product_id}' AND size='{$size}'";
     $query = mysqli_query($conn, $sql);
     if(mysqli_num_rows($query) > 0){
         echo "Product already has been added";
